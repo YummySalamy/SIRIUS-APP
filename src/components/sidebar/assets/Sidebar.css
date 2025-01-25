@@ -112,7 +112,7 @@
 }
 
 .subnav.visible {
-  max-height: 500px; /* Ajustar según la cantidad de subitems */
+  max-height: 500px;
   opacity: 1;
 }
 
