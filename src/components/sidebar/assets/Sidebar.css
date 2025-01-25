@@ -86,8 +86,11 @@
 }
 
 .nav-icon {
-  margin-right: 10px;
   font-size: 20px;
+}
+
+.nav-label {
+  margin-left: 10px;
 }
 
 .dropdown-icon {
