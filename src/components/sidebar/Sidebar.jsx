@@ -16,7 +16,6 @@ const Sidebar = ({ toggleTheme, currentTheme }) => {
   };
 
   const handleNavItemClick = (index, hasSubItems) => {
-    // Solo alternar el submenú si el navitem tiene subitems
     if (hasSubItems) {
       setOpenSubNav(openSubNav === index ? null : index);
     }

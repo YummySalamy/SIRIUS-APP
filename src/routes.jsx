@@ -1,4 +1,4 @@
-import HomePage from './views/HomePage';
+import HomePage from './views/home/HomePage';
 import MechanicsPage from './views/MechanicsPage';
 import FreeFallExperiment from './views/FreeFallExperiment';
 import ProjectileMotion from './views/ProjectileMotion';
