@@ -1,0 +1,49 @@
+:root {
+  --background: #fff;
+  --text-color: #000;
+  --sidebar-bg: #f4f4f4;
+  --sidebar-hover: #ddd;
+  --link-color: #333;
+  --subnav-bg: #e9e9e9;
+  --icon-active: #9e47e9;
+  --border-radius: 10px;
+  --transition-time: 0.3s;
+}
+
+[data-theme='dark'] {
+  --background: #1e1e2f;
+  --text-color: #fff;
+  --sidebar-bg: #282c34;
+  --sidebar-hover: #444;
+  --link-color: #ccc;
+  --subnav-bg: #333;
+  --icon-active: #9e47e9;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background: var(--background);
+  color: var(--text-color);
+  height: 100%;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+  transition: margin-left 0.3s;
+}
+
+.sidebar.closed ~ .content {
+  margin-left: 80px;
+  width: calc(100% - 80px);
+}
