@@ -84,7 +84,8 @@ const Sidebar = ({ toggleTheme, currentTheme }) => {
                       }`}
                     >
                       <Link to={subItem.href} className="subnav-link">
-                        {subItem.label}
+                        <span className="subnav-icon">{subItem.icon}</span>
+                        {isOpen && (subItem.label)}
                       </Link>
                     </li>
                   ))}
