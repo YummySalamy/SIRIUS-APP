@@ -23,3 +23,84 @@
   line-height: 1.6;
   color: var(--text-color);
 }
+
+/* Special card */
+.special-card-title {
+  color: #262626;
+  font-size: 1.5em;
+  line-height: normal;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.special-small-desc {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #452c2c;
+}
+
+.special-go-corner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  background: var(--light-to-dark-gradient);
+  border-radius: 0 4px 0 32px;
+  cursor: pointer;
+}
+
+.special-go-arrow {
+  margin-top: -4px;
+  margin-right: -4px;
+  color: white;
+  font-family: courier, sans;
+}
+
+.special-card {
+  display: block;
+  position: relative;
+  max-width: 300px;
+  max-height: 320px;
+  border-radius: 10px;
+  padding: 2em 1.2em;
+  margin: 12px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  background: var(--text-color);
+}
+
+.special-card:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -16px;
+  right: -16px;
+  background: var(--light-to-dark-gradient);
+  height: 32px;
+  width: 32px;
+  border-radius: 32px;
+  transform: scale(1);
+  transform-origin: 50% 50%;
+  transition: transform 0.35s ease-out;
+}
+
+.special-card:hover:before {
+  transform: scale(28);
+}
+
+.special-card:hover .special-small-desc {
+  transition: all 0.5s ease-out;
+  color: var(--text-color);
+}
+
+.special-card:hover .special-card-title {
+  transition: all 0.5s ease-out;
+  color: #ffffff;
+}
