@@ -4,7 +4,7 @@ export const SidebarItems = [
   {
     label: 'Home',
     icon: <FaHome />,
-    href: '/home',
+    href: '/',
     isNavTitle: false,
     navItems: [],
   },

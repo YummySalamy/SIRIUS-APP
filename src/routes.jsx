@@ -11,7 +11,7 @@ import WaveInterferenceExperiment from './views/WaveInterferenceExperiment';
 import SettingsPage from './views/SettingsPage';
 
 export const AppRoutes = [
-  { path: '/home', element: <HomePage /> },
+  { path: '/', element: <HomePage /> },
   { path: '/physics/mechanics', element: <MechanicsPage /> },
   { path: '/physics/mechanics/free-fall', element: <FreeFallExperiment /> },
   { path: '/physics/mechanics/projectile-motion', element: <ProjectileMotion /> },
