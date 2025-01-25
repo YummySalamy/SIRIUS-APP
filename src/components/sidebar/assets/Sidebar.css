@@ -123,7 +123,7 @@
 }
 
 .subnav-item.active .subnav-link {
-  background-color: var(--icon-active);
+  background-color: var(--alt-icon-active);
   color: var(--text-color);
   transform: translateX(5px);
 }

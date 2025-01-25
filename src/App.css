@@ -8,6 +8,7 @@
   --icon-active: #9e47e9;
   --border-radius: 10px;
   --transition-time: 0.3s;
+  --alt-icon-active: #a966e3;
 }
 
 [data-theme='dark'] {
@@ -18,6 +19,7 @@
   --link-color: #ccc;
   --subnav-bg: #333;
   --icon-active: #9e47e9;
+  --alt-icon-active: #a966e3;
 }
 
 html, body {
